@@ -1,208 +1,79 @@
-/* FONTS */
+/* 
+fonts
 
-/*
-Montserrat - 700
-Montserrat - 600
-Montserrat - 500
-Montserrat - 300
-Crimson Pro - 200
-Lora - 400
-Lora - 700
+font-family: 'Crimson Pro', serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
-
-/* COLORS */
-:root {
-  --text-color: #fff;
-  --bgcolor: #181719;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: var(--text-color);
-  background-color: var(--bgcolor);
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  background-color: #181719;
+  color: #ffffff;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  margin-right: 44px;
-  margin-left: 76px;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  margin: 42px 77px 280px 77px;
 }
 
 /* NAV */
 
 nav {
-  margin: 46px 76px 153px 85px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-nav .logo h2 {
-  font-family: Crimson Pro;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  border: 1px solid #fff;
-  padding: 8px;
-  cursor: pointer;
-}
-
-nav .navbar ul li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 86px;
-  cursor: pointer;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-nav .navbar ul li:first-child {
-  font-weight: bold;
-}
-
-nav .logo h2:hover,
-nav .navbar ul li:hover {
-  font-weight: bold;
-  transition: 0.5s;
-}
-
-/* MAIN */
-
-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-main .text h1 {
-  font-family: Lora;
+nav .logo {
+  font-family: 'Crimson Pro', serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 61px;
-}
-
-main .text p {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  max-width: 410px;
-
-  margin-top: 40px;
-  margin-bottom: 48px;
-}
-
-main .text a {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  color: #fff;
-  text-decoration: none;
-}
-main .text a:hover {
-  font-weight: bold;
-}
-
-main .banner {
-  height: 587px;
-  width: 822px;
-}
-
-main .banner img {
-  position: relative;
-  width: 100%;
-  height: 586.53px;
-  margin-right: 44px;
-}
-
-main .banner .card img {
-  width: 85px;
-  height: 72px;
-  border-radius: 50%;
-  margin-top: 10px;
-  margin-left: 14px;
-}
-
-main .banner .card {
-  position: absolute;
-  background-color: var(--bgcolor);
-
-  height: 189px;
-  width: 450px;
-
-  margin-top: -150px;
-  margin-left: 347px;
-
-  border-radius: 0px;
-}
-
-main .banner .card .description {
-  display: flex;
-}
-
-main .banner .card .description h3 {
-  margin-top: 23px;
-  margin-bottom: 8px;
-}
-
-main .banner .card h3 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 14px;
-  line-height: 17px;
-}
+  line-height: 16px;
 
-main .banner .card p {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-
-  color: #828282;
-}
-
-main .banner .card .designed {
-  font-family: Lora;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 40px;
-
-  width: 287;
-  height: 62px;
-
-  margin-left: 26px;
-  margin-right: 97px;
+  text-transform: uppercase;
+  box-sizing: border-box;
 
   color: #ffffff;
 }
 
-footer {
-  margin-top: 140px;
-  margin-bottom: 46px;
+nav .logo span {
+  border: 1px solid #ffffff;
+  padding: 8px;
+}
 
-  text-align: center;
+nav .navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 86px;
+  cursor: pointer;
+}
+
+nav .navbar ul li:first-child {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  margin-left: 648;
+
+  color: #ffffff;
+}
+
+nav .navbar ul li {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
 }
